@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const age3 = (birthYear) => 2037 - birthYear;
 const age = age3(1991);
@@ -38,11 +38,11 @@ console.log(some_arr);
 // console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
 const jonas = {
-  firstName: "Martin",
-  lastName: "Kovarik",
+  firstName: 'Martin',
+  lastName: 'Kovarik',
   birthYear: 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Stephen"],
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Stephen'],
   hasDriverLicense: false,
   calcAge: function () {
     this.age = 2037 - this.birthYear;
@@ -50,7 +50,7 @@ const jonas = {
   },
   getSummary: function () {
     return `${this.firstName} is a ${this.calcAge()} old teacher, and he has ${
-      this.hasDriverLicense ? "a" : "no"
+      this.hasDriverLicense ? 'a' : 'no'
     } driver's license.`;
   },
 };
@@ -60,9 +60,9 @@ console.log(jonas.age);
 console.log(jonas.getSummary());
 
 // Coding challenge
-console.log("\n------------------ Coding challenge ------------------------\n");
+console.log('\n------------------ Coding challenge ------------------------\n');
 const mark = {
-  fullName: "Mark Miller",
+  fullName: 'Mark Miller',
   mass: 78,
   height: 1.69,
   calcBMI: function () {
@@ -73,7 +73,7 @@ const mark = {
 };
 
 const john = {
-  fullName: "John Smith",
+  fullName: 'John Smith',
   mass: 92,
   height: 1.95,
   calcBMI: function () {
@@ -93,17 +93,17 @@ if (mark.calcBMI() > john.calcBMI()) {
 }
 console.log(result);
 
-console.log("\n----------------- DICE ----------------\n");
+console.log('\n----------------- DICE ----------------\n');
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 while (dice !== 6) {
   console.log(`You rolled a ${dice}`);
   dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log("Loop is about to end ...");
+  if (dice === 6) console.log('Loop is about to end ...');
 }
 
 // Coding challenge
-console.log("\n------------------ Coding challenge ------------------------\n");
+console.log('\n------------------ Coding challenge ------------------------\n');
 // calculate standard deviation
 let another_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -118,3 +118,4 @@ const dev = function (arr) {
 };
 
 console.log(`Standard deviation is ${dev(another_arr)}`);
+console.log('end');

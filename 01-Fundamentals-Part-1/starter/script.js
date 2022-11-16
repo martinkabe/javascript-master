@@ -1,3 +1,5 @@
+'use strict';
+
 let some_arr = [1, 2, 3, 4, 5];
 function accumulate(val1, val2) {
     return val1 + val2;
@@ -8,7 +10,7 @@ for (let i = 0; i < some_arr.length; i++) {
     accumulator = accumulate(accumulator, some_arr[i]);
 }
 
-accumulator_result = `Accumulator is ${accumulator}`;
+let accumulator_result = `Accumulator is ${accumulator}`;
 console.log(accumulator_result);
 
 function add(val1, val2) {

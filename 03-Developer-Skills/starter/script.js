@@ -2,6 +2,7 @@
 'use strict';
 
 // Coding challenge - calculate temperature amplitude (temp max - temp min)
+console.log('----------------- Coding challenge -----------------');
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 const n = temperatures.length;
 
@@ -26,3 +27,20 @@ const tempAmplitude = calcTempAmplitude(temperatures);
 console.log(
   `Min = ${tempAmplitude.Min}, Max = ${tempAmplitude.Max}, temperature amplitude = ${tempAmplitude.tempAmplitude}`
 );
+
+console.log('----------------- Coding challenge -----------------');
+const some_arr = [17, 21, 23];
+
+const printForecast = function (arr) {
+  const n_arr = some_arr.length;
+
+  let tempResults = '';
+  let dayIncr = 1;
+  for (let i = 0; i < n_arr; i++) {
+    tempResults += `${some_arr[i]}°C in ${dayIncr} days ... `;
+    dayIncr++;
+  }
+  return tempResults;
+};
+
+console.log(printForecast(some_arr));

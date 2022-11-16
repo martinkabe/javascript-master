@@ -1,10 +1,10 @@
 'use strict';
 
-const age3 = (birthYear) => 2037 - birthYear;
+const age3 = birthYear => 2037 - birthYear;
 const age = age3(1991);
 console.log(age);
 
-const yearUntilRetirement = (birthYear) => {
+const yearUntilRetirement = birthYear => {
   const age = 2037 - birthYear;
   const retirement = 65 - age;
   return retirement;
@@ -14,7 +14,7 @@ console.log(`Years until retirement = ${yearUntilRetirement(1991)}`);
 
 // Calc average
 const some_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const average = (arr) => {
+const average = arr => {
   let sum = 0;
   const n = arr.length;
   for (let i = 0; i < n; i++) {
